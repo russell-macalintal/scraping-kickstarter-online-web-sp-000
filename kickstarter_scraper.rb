@@ -26,10 +26,10 @@ def create_project_hash
       # :percent_funded => project.css('li.first.funded strong').text.gsub("%","").to_i
     }
     # METHOD 3
-    projects[title.to_sym][:image_link] = project.css('div.project-thumbnail a img').attribute('src').value
-    projects[title.to_sym][:description] = project.css('p.bbcard_blurb').text
-    projects[title.to_sym][:location] = project.css('span.location-name').text
-    projects[title.to_sym][:percent_funded] = project.css('li.first.funded strong').text.gsub("%","").to_i
+    # projects[title.to_sym][:image_link] = project.css('div.project-thumbnail a img').attribute('src').value
+    # projects[title.to_sym][:description] = project.css('p.bbcard_blurb').text
+    # projects[title.to_sym][:location] = project.css('span.location-name').text
+    # projects[title.to_sym][:percent_funded] = project.css('li.first.funded strong').text.gsub("%","").to_i
 
   end
 
