@@ -18,11 +18,11 @@ def create_project_hash
       # location: project.css('span.location-name').text,
       # percent_funded: project.css('li.first.funded strong').text.gsub("%","").to_i
       ########################
-      :image_link => project.css('div.project-thumbnail a img').attribute('src').value,
-      :description => project.css('p.bbcard_blurb').text,
-      :location => project.css('span.location-name').text,
-      :percent_funded => project.css('li.first.funded strong').text.gsub("%","").to_i
-
+      # :image_link => project.css('div.project-thumbnail a img').attribute('src').value,
+      # :description => project.css('p.bbcard_blurb').text,
+      # :location => project.css('span.location-name').text,
+      # :percent_funded => project.css('li.first.funded strong').text.gsub("%","").to_i
+      ########################
     }
   end
 
