@@ -30,7 +30,7 @@ def create_project_hash
     projects[title.to_sym][:description] = project.css('p.bbcard_blurb').text
     projects[title.to_sym][:location] = project.css('span.location-name').text
     projects[title.to_sym][:percent_funded] = project.css('li.first.funded strong').text.gsub("%","").to_i
-    
+
   end
 
   projects
